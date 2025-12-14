@@ -1,2 +1,10 @@
 # ros2_project
-Interface for controlling a robot with camera driver
+This project consists in developing a CLI interface for basic control of a robot using a camera driver. 
+
+
+
+
+
+
+
+
