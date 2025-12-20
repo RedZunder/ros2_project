@@ -1,0 +1,21 @@
+[2.274s] Invoking command in '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/src/camera_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/build install --record /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/install.log --single-version-externally-managed install_data
+[2.908s] running egg_info
+[2.960s] writing ../../build/camera_driver/camera_driver.egg-info/PKG-INFO
+[2.961s] writing dependency_links to ../../build/camera_driver/camera_driver.egg-info/dependency_links.txt
+[2.961s] writing entry points to ../../build/camera_driver/camera_driver.egg-info/entry_points.txt
+[2.962s] writing requirements to ../../build/camera_driver/camera_driver.egg-info/requires.txt
+[2.962s] writing top-level names to ../../build/camera_driver/camera_driver.egg-info/top_level.txt
+[3.067s] reading manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'
+[3.069s] writing manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'
+[3.069s] running build
+[3.069s] running build_py
+[3.070s] running install
+[3.085s] running install_lib
+[3.138s] running install_data
+[3.138s] running install_egg_info
+[3.192s] removing '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver/lib/python3.12/site-packages/camera_driver-0.0.0-py3.12.egg-info' (and everything under it)
+[3.193s] Copying ../../build/camera_driver/camera_driver.egg-info to /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver/lib/python3.12/site-packages/camera_driver-0.0.0-py3.12.egg-info
+[3.196s] running install_scripts
+[3.537s] Installing camera_node script to /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver/lib/camera_driver
+[3.537s] writing list of installed files to '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/install.log'
+[3.594s] Invoked command in '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/src/camera_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/build install --record /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/camera_driver/install.log --single-version-externally-managed install_data
