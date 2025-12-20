@@ -1,0 +1,46 @@
+[0.535s] Invoking command in '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/other_mssgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_test:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/other_mssgs -- -j12 -l12
+[0.647s] /bin/sh: 1: SOFTWARE/ros2_project/ros2_ws/build/other_mssgs/ament_cmake_python/other_mssgs/other_mssgs: not found
+[0.647s] /bin/sh: 1: SOFTWARE/ros2_project/ros2_ws/src/other_mssgs/other_mssgs: not found
+[0.647s] gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_other_mssgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_other_mssgs] Error 127
+[0.648s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/ament_cmake_python_copy_other_mssgs.dir/all] Error 2
+[0.649s] gmake: *** [Makefile:146: all] Error 2
+[0.664s] CMake Error: cmake version 3.28.3
+[0.664s] Usage: /usr/bin/cmake -E <command> [arguments...]
+[0.665s] Available commands: 
+[0.665s]   capabilities              - Report capabilities built into cmake in JSON format
+[0.665s]   cat [--] <files>...       - concat the files and print them to the standard output
+[0.665s]   chdir dir cmd [args...]   - run command in a given directory
+[0.666s]   compare_files [--ignore-eol] file1 file2
+[0.666s]                               - check if file1 is same as file2
+[0.666s]   copy <file>... destination  - copy files to destination (either file or directory)
+[0.668s]   copy_directory <dir>... destination   - copy content of <dir>... directories to 'destination' directory
+[0.668s]   copy_directory_if_different <dir>... destination   - copy changed content of <dir>... directories to 'destination' directory
+[0.668s]   copy_if_different <file>... destination  - copy files if it has changed
+[0.669s]   echo [<string>...]        - displays arguments as text
+[0.669s]   echo_append [<string>...] - displays arguments as text but no new line
+[0.669s]   env [--unset=NAME ...] [NAME=VALUE ...] [--] <command> [<arg>...]
+[0.670s]                             - run command in a modified environment
+[0.670s]   environment               - display the current environment
+[0.670s]   make_directory <dir>...   - create parent and <dir> directories
+[0.670s]   md5sum <file>...          - create MD5 checksum of files
+[0.671s]   sha1sum <file>...         - create SHA1 checksum of files
+[0.671s]   sha224sum <file>...       - create SHA224 checksum of files
+[0.671s]   sha256sum <file>...       - create SHA256 checksum of files
+[0.671s]   sha384sum <file>...       - create SHA384 checksum of files
+[0.672s]   sha512sum <file>...       - create SHA512 checksum of files
+[0.672s]   remove [-f] <file>...     - remove the file(s), use -f to force it (deprecated: use rm instead)
+[0.672s]   remove_directory <dir>... - remove directories and their contents (deprecated: use rm instead)
+[0.672s]   rename oldname newname    - rename a file or directory (on one volume)
+[0.672s]   rm [-rRf] [--] <file/dir>... - remove files or directories, use -f to force it, r or R to remove directories and their contents recursively
+[0.672s]   sleep <number>...         - sleep for given number of seconds
+[0.672s]   tar [cxt][vf][zjJ] file.tar [file/dir1 file/dir2 ...]
+[0.673s]                             - create or extract a tar or zip archive
+[0.674s]   time command [args...]    - run command and display elapsed time
+[0.674s]   touch <file>...           - touch a <file>.
+[0.674s]   touch_nocreate <file>...  - touch a <file> but do not create it.
+[0.674s]   create_symlink old new    - create a symbolic link new -> old
+[0.674s]   create_hardlink old new   - create a hard link new -> old
+[0.674s]   true                      - do nothing with an exit code of 0
+[0.675s]   false                     - do nothing with an exit code of 1
+[0.675s] 
+[0.675s] Invoked command in '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/other_mssgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_test:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/other_mssgs -- -j12 -l12

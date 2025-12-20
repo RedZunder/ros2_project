@@ -1,0 +1,72 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/other_mssgs
+/bin/sh: 1: /bin/sh: 1: SOFTWARE/ros2_project/ros2_ws/src/other_mssgs/other_mssgs: not found
+SOFTWARE/ros2_project/ros2_ws/build/other_mssgs/ament_cmake_python/other_mssgs/other_mssgs: not found
+gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_other_mssgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_other_mssgs] Error 127
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/ament_cmake_python_copy_other_mssgs.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
+CMake Error: cmake version 3.28.3
+Usage: /usr/bin/cmake -E <command> [arguments...]
+Available commands: 
+  capabilities              - Report capabilities built into cmake in JSON format
+  cat [--] <files>...       - concat the files and print them to the standard output
+  chdir dir cmd [args...]   - run command in a given directory
+  compare_files [--ignore-eol] file1 file2
+                              - check if file1 is same as file2
+  copy <file>... destination  - copy files to destination (either file or directory)
+  copy_directory <dir>... destination   - copy content of <dir>... directories to 'destination' directory
+  copy_directory_if_different <dir>... destination   - copy changed content of <dir>... directories to 'destination' directory
+  copy_if_different <file>... destination  - copy files if it has changed
+  echo [<string>...]        - displays arguments as text
+  echo_append [<string>...] - displays arguments as text but no new line
+  env [--unset=NAME ...] [NAME=VALUE ...] [--] <command> [<arg>...]
+                            - run command in a modified environment
+  environment               - display the current environment
+  make_directory <dir>...   - create parent and <dir> directories
+  md5sum <file>...          - create MD5 checksum of files
+  sha1sum <file>...         - create SHA1 checksum of files
+  sha224sum <file>...       - create SHA224 checksum of files
+  sha256sum <file>...       - create SHA256 checksum of files
+  sha384sum <file>...       - create SHA384 checksum of files
+  sha512sum <file>...       - create SHA512 checksum of files
+  remove [-f] <file>...     - remove the file(s), use -f to force it (deprecated: use rm instead)
+  remove_directory <dir>... - remove directories and their contents (deprecated: use rm instead)
+  rename oldname newname    - rename a file or directory (on one volume)
+  rm [-rRf] [--] <file/dir>... - remove files or directories, use -f to force it, r or R to remove directories and their contents recursively
+  sleep <number>...         - sleep for given number of seconds
+  tar [cxt][vf][zjJ] file.tar [file/dir1 file/dir2 ...]
+                            - create or extract a tar or zip archive
+  time command [args...]    - run command and display elapsed time
+  touch <file>...           - touch a <file>.
+  touch_nocreate <file>...  - touch a <file> but do not create it.
+  create_symlink old new    - create a symbolic link new -> old
+  create_hardlink old new   - create a hard link new -> old
+  true                      - do nothing with an exit code of 0
+  false                     - do nothing with an exit code of 1
+
