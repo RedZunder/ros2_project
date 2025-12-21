@@ -6,7 +6,6 @@ import rclpy                            #----------Python Client Library for ROS
 from builtin_interfaces.msg import Duration
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point
 from trajectory_msgs.msg import JointTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 
@@ -17,22 +16,18 @@ import numpy as np
 
 SCREEN_SIZE=(620,720,3)
 
-class MinimalSubsPubs(Node):
+class RobotControlNode(Node):
     def __init__(self):
-        super().__init__('minimal_subspubs')
+        super().__init__('robot_control_node_py')
 
         #----------SUBSCRIBER
-        self.window_name = "camera"
+        self.window_name = "controller interface"
         self.subscription = self.create_subscription(Image,'image_raw',self.listener_callback,10)
         self.subscription               #----------prevent unused variable warning
 
-        #Trajectory points
-        self.test_traj = {"points":[[0.0, 3.0, 0.0, -2.0, 0.0, 0.0]],
-                          "time":[Duration(sec=5)]}
-
         #----------PUBLISHER
         self.UR_publisher = self.create_publisher(JointTrajectory, '/scaled_joint_trajectory_controller/joint_trajectory', 10)
-        self.declare_parameter('rect_size', 200)
+        self.declare_parameter('rect_size', 100)
         self.rect_size = self.get_parameter('rect_size').value
         print(f"self.rect_size: {self.rect_size}")
         self.point = None
@@ -59,14 +54,22 @@ class MinimalSubsPubs(Node):
 
             #Create suitable topic message
             trajectory = JointTrajectory()
+            points=[[]]
+            time=[Duration(sec=5)]
+
+            if y > SCREEN_SIZE[0]/2 :
+                points= [[0.0,-10.0, 0.0, 0.0, 0.0, 0.0]]
+            else :
+                points= [[0.0, 10.0, 0.0, 0.0, 0.0, 0.0]]
 
             trajectory.joint_names = ["shoulder_pan_joint","shoulder_lift_joint","elbow_joint",
                                 "wrist_1_joint","wrist_2_joint","wrist_3_joint"]
             trajectory.points = [
                 JointTrajectoryPoint(
-                    positions=self.test_traj["points"][i], time_from_start=self.test_traj["time"][i]
+                    positions=points[i],
+                    time_from_start=time[i]
                 )
-                for i in range(len(self.test_traj["points"]))
+                for i in range(len(points))
             ]
 
             print(trajectory)                                   #----------for debug
@@ -77,12 +80,12 @@ class MinimalSubsPubs(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    minimal_subscriber = MinimalSubsPubs()
-    rclpy.spin(minimal_subscriber)
+    ur_control_node = RobotControlNode()
+    rclpy.spin(ur_control_node)
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    minimal_subscriber.destroy_node()
+    ur_control_node.destroy_node()
     rclpy.shutdown()
 
 
