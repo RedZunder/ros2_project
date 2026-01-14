@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000465] (camera_driver) JobQueued: {'identifier': 'camera_driver', 'dependencies': OrderedDict()}
-[0.000548] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
-[0.000602] (camera_driver) JobStarted: {'identifier': 'camera_driver'}
-[0.018390] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
-[0.097966] (-) TimerEvent: {}
-[0.149120] (camera_driver) JobEnded: {'identifier': 'camera_driver', 'rc': 0}
-[0.150797] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 'SIGINT'}
-[0.161474] (-) EventReactorShutdown: {}

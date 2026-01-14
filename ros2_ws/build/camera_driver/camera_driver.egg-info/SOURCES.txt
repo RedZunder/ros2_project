@@ -10,6 +10,7 @@ setup.py
 ../../build/camera_driver/camera_driver.egg-info/zip-safe
 camera_driver/__init__.py
 camera_driver/camera_node.py
+launch/camera_project_launch.py
 resource/camera_driver
 test/test_copyright.py
 test/test_flake8.py

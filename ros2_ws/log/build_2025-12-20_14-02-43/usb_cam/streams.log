@@ -1,8 +1,0 @@
-[0.550s] Invoking command in '/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_test:/home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/install/camera_driver:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dz/Desktop/uni/SEM 7/TOOLS&SOFTWARE/ros2_project/ros2_ws/build/usb_cam -- -j12 -l12
-[0.679s] [ 14%] Built target gtest
-[0.680s] [ 28%] Built target gtest_main
-[0.682s] [ 42%] Built target usb_cam
-[0.690s] [ 57%] Built target usb_cam_node_exe
-[0.734s] [ 71%] Built target test_usb_cam_utils
-[0.737s] [ 85%] Built target test_pixel_formats
-[0.751s] [100%] Built target usb_cam_node

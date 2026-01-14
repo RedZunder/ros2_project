@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os           # <--- DODAJ TO
+from glob import glob # <--- DODAJ TO
 
 package_name = 'camera_driver'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # --- DODAJ PONIŻSZĄ LINIĘ ---
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -17,14 +21,10 @@ setup(
     maintainer_email='dz@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                    'camera_node = camera_driver.camera_node:main',
+            'camera_node = camera_driver.camera_node:main',
         ],
     },
 )

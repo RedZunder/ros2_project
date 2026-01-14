@@ -1,2 +1,0 @@
-[console_scripts]
-cam_node = camera_test.cam_node:main
