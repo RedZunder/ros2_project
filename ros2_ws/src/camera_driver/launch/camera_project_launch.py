@@ -3,7 +3,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-        # 1. Uruchomienie węzła kamery
+       
         Node(
             package='usb_cam',
             executable='usb_cam_node_exe',
@@ -22,8 +22,8 @@ def generate_launch_description():
             executable='camera_node',
             name='controller',
             parameters=[{
-                'rect_size': 50  # Tutaj możesz zmienić domyślny rozmiar
+                'rect_size': 100  
             }],
-            output='screen' # Dzięki temu zobaczysz logi w terminalu
+            output='screen' 
         )
     ])

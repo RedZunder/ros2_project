@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
-import os           # <--- DODAJ TO
-from glob import glob # <--- DODAJ TO
+import os           
+from glob import glob 
 
 package_name = 'camera_driver'
 
