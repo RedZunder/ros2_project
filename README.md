@@ -32,6 +32,23 @@ To run the robot controller:
 - `ros2 run usb_cam usb_cam_node_exe`
 - `ros2 run camera_driver camera_node` or `ros2 run camera_driver camera_node --ros-args -p rect_size:={size}` to choose a specific square size.
 
+  
+## One command camera launch
+*Inside ros2_ws*:
+- `source /opt/ros/{humble OR jazzy}/setup.bash`
+- `colcon build`
+- `source install/setup.bash`
+- `ros2 launch camera_driver camera_project_launch.py`
+
+ ##Docker build
+ inside project folder, where you have docerFile
+ - docker compose up
+ - settings on website
+ - if not working ... 
+ 
+ docker cp /opt/ros/jazzy/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap ursim:/ursim/programs.UR5/
+
+ and restart
 
 
 
