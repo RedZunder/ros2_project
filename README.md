@@ -3,6 +3,22 @@ This project consists in developing a CLI interface for basic control of a robot
 
 The `install_pks.sh` file will install required packages when executed.
 
+ ## Docker build
+ inside project folder, where you have docerFile
+ - docker compose up
+ - Turn it on and start it. Go to Program > URCap > External Control. After adding
+it to the main program, run it by clicking the "play" button.
+ - If there is problem with connection go into Installation > URCaps > External Control and change Ip into 180.25.0.10 (you can set in on .yml file) 
+
+
+ - if not working ... 
+ 
+ docker cp /opt/ros/jazzy/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap ursim:/ursim/programs.UR5/
+
+ and restart
+
+
+
 ## Instructions
 
 - install ROS distro (Humble for Ubuntu 22 or Jazzy for Ubuntu 24)
@@ -40,19 +56,7 @@ To run the robot controller:
 - `source install/setup.bash`
 - `ros2 launch camera_driver camera_project_launch.py`
 
- ##Docker build
- inside project folder, where you have docerFile
- - docker compose up
- - Turn it on and start it. Go to Program > URCap > External Control. After adding
-it to the main program, run it by clicking the "play" button.
- - If there is problem with connection go into Installation > URCaps > External Control and change Ip into 180.25.0.10 (you can set in on .yml file) 
 
-
- - if not working ... 
- 
- docker cp /opt/ros/jazzy/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap ursim:/ursim/programs.UR5/
-
- and restart
 
 
 
