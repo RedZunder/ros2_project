@@ -1,0 +1,58 @@
+services:
+  ros2_viz:
+    build: .
+    container_name: ros2_viz
+    networks:
+      ur_net:
+        ipv4_address: 180.25.0.10
+    restart: always
+    devices:
+      - /dev/dri:/dev/dri
+    privileged: true
+    environment:
+      - ROS_DOMAIN_ID=0
+      - DISPLAY=${DISPLAY}
+      - QT_QPA_PLATFORM=xcb
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/tmp/.docker.xauth
+    volumes:
+      
+      - ./ros2_ws/src:/ros2_ws/src
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority:rw
+    command: >
+      bash -c "sleep 20 && ros2 launch ur_robot_driver ur_control.launch.py
+      ur_type:=ur3e
+      robot_ip:=180.25.0.20
+      reverse_ip:=180.25.0.10
+      headless_mode:=false
+      launch_rviz:=true
+      use_fake_hardware:=false
+      initial_joint_controller:=scaled_joint_trajectory_controller
+      controller_spawner_timeout:=60 & 
+      ros2 launch camera_driver camera_project_launch.py"
+    
+  ursim:
+    image: universalrobots/ursim_e-series:latest
+    container_name: ursim
+    networks:
+      ur_net:
+        ipv4_address: 180.25.0.20
+    ports:
+      - "6080:6080"
+      - "5900:5900"
+    environment:
+      - ROBOT_MODEL=UR3e
+    volumes:
+      - ./ursim/os:/urcapsos
+      - ./ursim/programs:/ursim/.urcaps
+      - ./ursim/ursim_data:/ursim/programs.UR3
+      - ./ursim/cache:/ursim/GUI/felix-cache
+
+networks:
+  ur_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 180.25.0.0/16
