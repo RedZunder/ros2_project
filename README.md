@@ -43,7 +43,11 @@ To run the robot controller:
  ##Docker build
  inside project folder, where you have docerFile
  - docker compose up
- - settings on website
+ - Turn it on and start it. Go to Program > URCap > External Control. After adding
+it to the main program, run it by clicking the "play" button.
+ - If there is problem with connection go into Installation > URCaps > External Control and change Ip into 180.25.0.10 (you can set in on .yml file) 
+
+
  - if not working ... 
  
  docker cp /opt/ros/jazzy/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap ursim:/ursim/programs.UR5/
