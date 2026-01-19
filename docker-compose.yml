@@ -4,7 +4,7 @@ services:
     container_name: ros2_viz
     networks:
       ur_net:
-        ipv4_address: 180.25.0.10
+        ipv4_address: 160.25.0.10
     restart: always
     devices:
       - /dev/dri:/dev/dri
@@ -24,8 +24,8 @@ services:
     command: >
       bash -c "sleep 20 && ros2 launch ur_robot_driver ur_control.launch.py
       ur_type:=ur3e
-      robot_ip:=180.25.0.20
-      reverse_ip:=180.25.0.10
+      robot_ip:=160.25.0.20
+      reverse_ip:=160.25.0.10
       headless_mode:=false
       launch_rviz:=true
       use_fake_hardware:=false
@@ -38,7 +38,7 @@ services:
     container_name: ursim
     networks:
       ur_net:
-        ipv4_address: 180.25.0.20
+        ipv4_address: 160.25.0.20
     ports:
       - "6080:6080"
       - "5900:5900"
@@ -55,4 +55,4 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 180.25.0.0/16
+        - subnet: 160.25.0.0/16

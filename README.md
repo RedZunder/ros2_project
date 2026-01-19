@@ -9,7 +9,7 @@ The `install_pks.sh` file will install required packages when executed.
  - 'docker compose up'
  - Turn it on and start it. Go to Program > URCap > External Control. After adding
 it to the main program, run it by clicking the "play" button.
- - If there is problem with connection go into Installation > URCaps > External Control and change Ip into 180.25.0.10 (you can set in on .yml file) 
+ - If there is problem with connection go into Installation > URCaps > External Control and change Ip into 160.25.0.10 (you can set in on .yml file) 
 
 
  - if not working ... 
